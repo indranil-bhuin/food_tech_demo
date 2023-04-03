@@ -26,18 +26,19 @@ const RoleDropdown = () => {
   const handleRoleClick = role => {
     switch (role) {
       case 'admin':
-  console.log(role);
+        console.log(role);
 
         dispatch(showAdminLoginForm());
         setSelectedRole('Admin');
         break;
       case 'employee':
-  console.log(role);
+        console.log(role);
 
         dispatch(showEmployeeLoginForm());
         setSelectedRole('Employee');
         break;
       case 'vendor':
+        console.log(role);
         dispatch(showVendorLoginForm());
         setSelectedRole('Vendor');
         break;
@@ -49,26 +50,25 @@ const RoleDropdown = () => {
 
   return (
     <View style={styles.dropdownContainer}>
-
-    <View style={styles.dropdown}>
-      <TouchableOpacity onPress={handleDropdownClick}>
-        <Text style={styles.dropdownButton}>{selectedRole}</Text>
-      </TouchableOpacity>
-      {isOpen && (
-        <View style={styles.dropdownContent}>
-          <TouchableOpacity onPress={() => handleRoleClick('admin')}>
-            <Text style={styles.dropdownOption}>Admin</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => handleRoleClick('employee')}>
-            <Text style={styles.dropdownOption}>Employee</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => handleRoleClick('vendor')}>
-            <Text style={styles.dropdownOption}>Vendor</Text>
-          </TouchableOpacity>
-        </View>
-      )}
-    </View>
+      <View style={styles.dropdown}>
+        <TouchableOpacity onPress={handleDropdownClick}>
+          <Text style={styles.dropdownButton}>{selectedRole}</Text>
+        </TouchableOpacity>
+        {isOpen && (
+          <View style={styles.dropdownContent}>
+            <TouchableOpacity onPress={() => handleRoleClick('admin')}>
+              <Text style={styles.dropdownOption}>Admin</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleRoleClick('employee')}>
+              <Text style={styles.dropdownOption}>Employee</Text>
+            </TouchableOpacity>
+            <TouchableOpacity onPress={() => handleRoleClick('vendor')}>
+              <Text style={styles.dropdownOption}>Vendor</Text>
+            </TouchableOpacity>
+          </View>
+        )}
       </View>
+    </View>
   );
 };
 

@@ -7,16 +7,16 @@ const adminSlice = createSlice({
     showRegisterForm: false,
   },
   reducers: {
-    showAdminLoginForm: (state, action) => {
-      state.showLoginForm = action.payload.showLoginForm;
-      state.showRegisterForm = action.payload.showRegisterForm;
-},
-showAdminRegisterForm: (state, action) => {
-      state.showLoginForm = action.payload.showLoginForm;
-      state.showRegisterForm = action.payload.showRegisterForm;
-},
+    showAdminLoginForm: state => {
+      state.showLoginForm = true;
+      state.showRegisterForm = false;
+    },
+    showAdminRegisterForm: state => {
+      state.showLoginForm = false;
+      state.showRegisterForm = true;
+    },
   },
 });
 
 export const {showAdminLoginForm, showAdminRegisterForm} = adminSlice.actions;
-export default adminSlice.reducer;
+export default adminSlice;
