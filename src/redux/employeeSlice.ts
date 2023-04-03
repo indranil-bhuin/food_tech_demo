@@ -19,4 +19,4 @@ const employeeSlice = createSlice({
 });
 
 export const {showEmployeeLoginForm, showEmployeeRegisterForm} = employeeSlice.actions;
-export default employeeSlice.reducer;
+export default employeeSlice;

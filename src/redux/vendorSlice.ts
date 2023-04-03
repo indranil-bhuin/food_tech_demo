@@ -20,4 +20,4 @@ const vendorSlice = createSlice({
 
 export const {showVendorLoginForm, showVendorRegisterForm} =
   vendorSlice.actions;
-export default vendorSlice.reducer;
+export default vendorSlice;

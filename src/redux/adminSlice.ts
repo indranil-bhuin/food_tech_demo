@@ -19,4 +19,4 @@ const adminSlice = createSlice({
 });
 
 export const {showAdminLoginForm, showAdminRegisterForm} = adminSlice.actions;
-export default adminSlice.reducer;
+export default adminSlice;
