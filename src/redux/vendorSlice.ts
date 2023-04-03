@@ -7,13 +7,13 @@ const vendorSlice = createSlice({
     showRegisterForm: false,
   },
   reducers: {
-    showVendorLoginForm: (state, action) => {
-      state.showLoginForm = action.payload.showLoginForm;
-      state.showRegisterForm = action.payload.showRegisterForm;
+    showVendorLoginForm: state => {
+      state.showLoginForm = true;
+      state.showRegisterForm = false;
     },
-    showVendorRegisterForm: (state, action) => {
-      state.showLoginForm = action.payload.showLoginForm;
-      state.showRegisterForm = action.payload.showRegisterForm;
+    showVendorRegisterForm: state => {
+      state.showLoginForm = false;
+      state.showRegisterForm = true;
     },
   },
 });

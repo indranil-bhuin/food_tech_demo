@@ -15,8 +15,6 @@ const LoginScreen = () => {
   const employeeFormStatus = useSelector(state => state.employeeSlice);
   const vendorFormStatus = useSelector(state => state.vendorSlice);
 
-  const dispatch = useDispatch();
-
   const renderLoginForm = () => {
     if (adminFormStatus?.showLoginForm) {
       return <AdminLoginForm />;
