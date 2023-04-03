@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomText renders text with proper styling 1`] = `
+<Text
+  style={
+    [
+      undefined,
+      {
+        "color": "#000000",
+        "fontFamily": "Nunito-Black",
+        "fontSize": 24,
+      },
+    ]
+  }
+>
+  Hello, World!
+</Text>
+`;

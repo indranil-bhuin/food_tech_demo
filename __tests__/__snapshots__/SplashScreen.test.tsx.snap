@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SplashScreen renders correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#594AB5",
+      "flex": 1,
+      "flexDirection": "column",
+      "justifyContent": "center",
+      "position": "relative",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "borderRadius": 150,
+        "height": 300,
+        "width": 300,
+      }
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../assets/images/logo.png",
+        }
+      }
+      style={
+        {
+          "height": 206,
+          "left": 20,
+          "top": 40,
+          "width": 232,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "justifyContent": "center",
+        "marginTop": 80,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          undefined,
+          {
+            "color": "#FFF",
+            "fontFamily": "Nunito-Black",
+            "fontSize": 24,
+          },
+        ]
+      }
+    >
+      The Ultimate Foodcourt
+    </Text>
+    <Text
+      style={
+        [
+          undefined,
+          {
+            "color": "#FFF",
+            "fontFamily": "Nunito-Black",
+            "fontSize": 24,
+          },
+        ]
+      }
+    >
+      for Nineleaps
+    </Text>
+  </View>
+  <View
+    style={{}}
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF",
+          "borderRadius": 25,
+          "height": 70,
+          "justifyContent": "center",
+          "marginTop": 150,
+          "opacity": 1,
+          "width": 320,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 16,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Get Started
+      </Text>
+    </View>
+  </View>
+</View>
+`;
